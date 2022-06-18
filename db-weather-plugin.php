@@ -28,10 +28,10 @@ function db_weather_plugin_options_page()
 }
 add_action('admin_menu', 'db_weather_plugin_options_page');
 
-function add_contact_form_admin_styles(){
+function add_weather_plugin_admin_styles(){
     wp_enqueue_style('weather-plugin-admin-styles', plugins_url( '/weather-admin-menu-style.css', __FILE__ ));
 }
-add_action('admin_enqueue_scripts', 'add_contact_form_admin_styles');
+add_action('admin_enqueue_scripts', 'add_weather_plugin_admin_styles');
 
 function weather_plugin_settings_html()
 {
