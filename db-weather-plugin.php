@@ -48,10 +48,10 @@ function weather_plugin_settings_html()
         <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
         <form method="post" action="">
 
-            <div id="act_settings_container">
+            <div id="weather_settings_container">
                 <div id="tab_information_container">
                     
-                    <div class="settings_tab_info open">
+                    <div class="settings_tab_info">
                     <h2>Weather Plugin Settings</h2>
 
                         <div class="row">
