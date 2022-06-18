@@ -26,7 +26,7 @@ function db_weather_plugin_options_page()
         'weather_plugin_settings_html'
     );
 }
-add_action('admin_menu', 'db_contact_form_options_page');
+add_action('admin_menu', 'db_weather_plugin_options_page');
 
 function add_contact_form_admin_styles(){
     wp_enqueue_style('weather-plugin-admin-styles', plugins_url( '/weather-admin-menu-style.css', __FILE__ ));
