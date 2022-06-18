@@ -39,18 +39,12 @@ function weather_plugin_settings_html()
     if(array_key_exists('submit-settings', $_POST))
     {
         //updating button options
-        update_option('to-email', $_POST['to-email']);
-        update_option('subject', $_POST['subject']);
-        update_option('user-message', $_POST['user-message']);
-
+        // update_option();
     }
 
     //variables to hold widget settings
-    $to_email = get_option('to-email', '');
-    $subject = get_option('subject', '');
-    $user_message = get_option('user-message', '');
 ?>
-    <div id="db-admin" class="wrap">
+    <div class="wrap">
         <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
         <form method="post" action="">
 
