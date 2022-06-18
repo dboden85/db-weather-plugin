@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:       DB Simple Contact Form
- * Plugin URI:        https://github.com/dboden85/db-contact-form
+ * Plugin Name:       DB Weather Plugin
+ * Plugin URI:        https://github.com/dboden85/db-weather-plugin
  * Description:       Add a simple contact form to your website
  * Version:           0.1
  * Author:            David Boden
  * Author URI:        https://www.db-websites.com
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:        https://github.com/dboden85/db-contact-form
- * GitHub Plugin URI: https://github.com/dboden85/db-contact-form
+ * Update URI:        https://github.com/dboden85/db-weather-plugin
+ * GitHub Plugin URI: https://github.com/dboden85/db-weather-plugin
  */
 
 ini_set('display_errors', 1); 
@@ -53,7 +53,26 @@ function weather_plugin_settings_html()
     <div id="db-admin" class="wrap">
         <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
         <form method="post" action="">
-            
+
+            <div id="act_settings_container">
+                <div id="tab_information_container">
+                    
+                    <div class="settings_tab_info open">
+                    <h2>Weather Plugin Settings</h2>
+
+                        <div class="row">
+                            <div>
+
+                            <label for="api-key">API Key</label>
+                            <input type="text" name="api-key" />
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <input type="submit" name="submit-settings" value="Submit Settings" class="button button-primary" id="db-settings-submit-button"/>
         </form> 
     </div>
