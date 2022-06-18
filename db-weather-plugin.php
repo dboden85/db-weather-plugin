@@ -49,20 +49,25 @@ function weather_plugin_settings_html()
         <form method="post" action="">
 
             <div id="weather_settings_container">
-                <div id="tab_information_container">
                     
-                    <div class="settings_tab_info">
-                    <h2>Weather Plugin Settings</h2>
+                <div class="settings_tab_info">
+                    <h2>API Key</h2>
+                    <div>
 
-                        <div class="row">
-                            <div>
+                        <label for="api-key">API Key</label>
+                        <input type="text" name="api-key" />
 
-                            <label for="api-key">API Key</label>
-                            <input type="text" name="api-key" />
+                    </div>
+                </div>
 
-                            </div>
+                <div class="settings_tab_info">
+                    <h2>Location</h2>
+                    <p>Enter City or zipcode</p>
+                    <div>
 
-                        </div>
+                        <label for="location">Location</label>
+                        <input type="text" name="location" />
+
                     </div>
                 </div>
             </div>

@@ -1,31 +1,32 @@
 #weather_settings_container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #03478050;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
+    width: 100%;
+    max-width: 1000px;
     height: 100%;
     max-height: max-content;
     margin-bottom: 20px;
-}
-
-#tab_information_container{
-    display: block;
-    background-color: #fff;
-    padding: 10px;
     box-sizing: border-box;
-    width: 100vw;
-    height: 100%;
+}
+
+.settings_tab_info{
+    background-color: #fff;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
     border-radius: 5px;
+    box-shadow: 7px 7px 10px #555;
+    box-sizing: border-box;
 }
 
-.settings_tab_info .row{
-    display: flex;
-    flex-direction: row;
+.settings_tab_info label {
+    font-weight: bold;
 }
 
-.settings_tab_info .column{
-    display: flex;
-    flex-direction: column;
+.settings_tab_info input{
+    width: 100%;
 }
